@@ -15,7 +15,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
     <a class="navbar-brand" href="/">
-      <img src="/assets/logo.png" alt="Last Chance Getaways Logo" height="40" />
+    <img src="/assets/logo.png" alt="Last Chance Getaways Logo" height="40" />    
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,20 +26,14 @@
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Destinations
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
-            <li><a class="dropdown-item" href="/venice">Venice, Italy</a></li>
-            <li><a class="dropdown-item" href="/great-barrier-reef">Great Barrier Reef</a></li>
-            <li><a class="dropdown-item" href="/glacier-national-park">Glacier National Park</a></li>
-            <li><a class="dropdown-item" href="/amazon-basin">Amazon Basin</a></li>
-            <li><a class="dropdown-item" href="/antarctic-peninsula">Antarctic Peninsula</a></li>
-          </ul>
-        </li>
         <li class="nav-item">
-          <a class="nav-link" href="/quiz">Quiz</a>
+          <a class="nav-link" href="/#destinations">Destinations</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="/quiz">Find My Perfect Trip</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="/reviews">Reviews</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/about">About</a>
@@ -51,14 +45,74 @@
 
 
   <main>
-    <h1>Last Chance Getaways</h1>
-<h3>Exceptional Destinations. Limited Time Only.</h3>
-<p>Explore the world's most breathtaking locations before (or after) they disappear. Witness Earth’s fragile landscapes undergoing rapid transformation. From vanishing coastlines to melting glaciers, Last Chance Getaways invites you to witness natural beauty in its final moments.</p>
+    <!-- Hero Section -->
+<div class="position-relative text-white">
+  <img src="/assets/hero-placeholder.jpg" class="img-fluid w-100" alt="Last Chance Getaways Hero Image" style="height: 75vh; object-fit: cover;" />
+  <div class="position-absolute top-50 start-50 translate-middle text-center px-3">
+    <h1 class="display-5 fw-bold">Exceptional Destinations. Limited Time Only.</h1>
+    <p class="lead">
+      Explore the world's most breathtaking locations before (or after) they disappear. <br>
+      Witness Earth’s fragile landscapes undergoing rapid transformation. <br>
+      From vanishing coastlines to melting glaciers, Last Chance Getaways invites you to witness natural beauty in its final moments.
+    </p>
+  </div>
+</div>
 <hr>
 <h2>About Our Experiences</h2>
 <p>Our curated travel experiences are designed to evolve based on current and anticipated conditions. Seasonal variations and environmental shifts are not seen as disruptions but as opportunities to discover destinations in their most dynamic states.</p>
 <p>Itineraries may be adjusted in real-time, and guests will be provided with necessary gear, training, or transport as needed.</p>
 <p>Travelers are encouraged to remain flexible.</p>
+<!-- Destination Carousel Section -->
+<section id="destinations" class="mt-5">
+    <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+    <div class="carousel-inner">
+<p><div class="carousel-item active">
+<img src="/assets/carousel-venice.jpg" class="d-block w-100" alt="Venice">
+<div class="carousel-caption d-none d-md-block">
+<h5>Venice, Italy</h5>
+<p>Book a twilight gondola ride through a sinking dream.</p>
+</div>
+</div></p>
+<p><div class="carousel-item">
+<img src="/assets/carousel-reef.jpg" class="d-block w-100" alt="Great Barrier Reef">
+<div class="carousel-caption d-none d-md-block">
+<h5>Great Barrier Reef</h5>
+<p>Snorkel the world's largest reef — while it still breathes.</p>
+</div>
+</div></p>
+<p><div class="carousel-item">
+<img src="/assets/carousel-glacier.jpg" class="d-block w-100" alt="Glacier National Park">
+<div class="carousel-caption d-none d-md-block">
+<h5>Glacier National Park</h5>
+<p>See the last glacier before it's a ghost.</p>
+</div>
+</div></p>
+<p><div class="carousel-item">
+<img src="/assets/carousel-amazon.jpg" class="d-block w-100" alt="Amazon Basin">
+<div class="carousel-caption d-none d-md-block">
+<h5>Amazon Basin</h5>
+<p>Drift through a vanishing rainforest frontier.</p>
+</div>
+</div></p>
+<p><div class="carousel-item">
+<img src="/assets/carousel-antarctic.jpg" class="d-block w-100" alt="Antarctic Peninsula">
+<div class="carousel-caption d-none d-md-block">
+<h5>Antarctic Peninsula</h5>
+<p>Wander the white before the melt rewrites the map.</p>
+</div>
+</div></p>
+<p></div></p>
+<p><!-- Controls -->
+<button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button></p>
+  </div>
+</section>
 <hr>
 <h2>Tailored Travel Begins Here</h2>
 <p>Every journey begins with the right match. Our travel profile tool considers your preferences, habits, and ideal pace to recommend a destination tailored to your unique outlook.</p>
@@ -71,23 +125,11 @@
     <p>Book now… or never.</p>
   </footer>
 
-<!-- Nav Bar Script -->
-  <script>
-    const dropdown = document.querySelector('nav li span');
-    const menu = document.getElementById('destinationMenu');
-
-    dropdown.addEventListener('click', () => {
-        const isVisible = menu.style.display === 'block';
-        menu.style.display = isVisible ? 'none' : 'block';
-    });
-  </script>
-
-<!-- Bootstrap Bundle with Popper -->
-  <script
+<!-- Bootstrap with Popper -->
+<script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C9x1SmFtwkP4KqN27YuToqpSPFmvFXnZozHhMOpK0gH8LhKxzB3SzVf5c3nHsNlv"
   crossorigin="anonymous">
-  </script>
+</script>
 
 </body>
 </html>
