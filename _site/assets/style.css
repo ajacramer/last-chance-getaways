@@ -1,0 +1,41 @@
+/* Global Styles */
+
+:root {
+    --color-navy: #191c36;
+    --color-cream: #f2e5d2;
+    --color-sand: #bbb3a7;
+    --color-teal: #2494a4;
+    --color-gold: #dbb13b;
+  }
+  
+  body {
+    background-color: var(--color-navy);
+    color: var(--color-sand);
+  }
+  
+  a {
+    color: var(--color-teal);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--color-gold);
+  }
+
+  h1, h2 {
+    font-family: amandine, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  h3, h4 {
+    font-family: amandine, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  p {
+    font-family: lato, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
