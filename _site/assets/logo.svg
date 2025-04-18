@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1232 117.58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2e5d2;
+        font-family: CaviarDreams-Bold, 'Caviar Dreams';
+        font-size: 100px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: .02em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(0 89.06)"><tspan class="cls-6" x="0" y="0">L</tspan><tspan class="cls-7" x="48.76" y="0">A</tspan><tspan class="cls-6" x="117.73" y="0">ST CHANCE GE</tspan><tspan class="cls-3" x="825.36" y="0">T</tspan><tspan class="cls-5" x="872.26" y="0">A</tspan><tspan class="cls-4" x="935.51" y="0">W</tspan><tspan class="cls-3" x="1014.01" y="0">A</tspan><tspan class="cls-6" x="1076.63" y="0">YS</tspan><tspan class="cls-2" x="1197.43" y="0"> </tspan></text>
+</svg>

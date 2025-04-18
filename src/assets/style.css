@@ -3,9 +3,9 @@
 :root {
     --color-navy: #191c36;
     --color-cream: #f2e5d2;
-    --color-sand: #bbb3a7;
+    --color-sand: #d7d0c6;
     --color-teal: #2494a4;
-    --color-gold: #dbb13b;
+    --color-gold: #e9cb5c;
   }
   
   body {
@@ -22,20 +22,142 @@
     color: var(--color-gold);
   }
 
-  h1, h2 {
+  h1 {
     font-family: amandine, sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: var(--color-white);
+    letter-spacing: 0.08em;
   }
 
-  h3, h4 {
+  .golden {
+    color: var(--color-gold);
+    letter-spacing: 0.0em;
+  }
+
+  h2, h3, h4 {
     font-family: amandine, sans-serif;
     font-weight: 700;
-    font-style: italic;
+    letter-spacing: 0.08em;
   }
 
   p {
     font-family: lato, sans-serif;
     font-weight: 500;
     font-style: normal;
+    color: rgb(241, 240, 240);
   }
+
+
+  /* Nav Bar Styling */
+.navbar {
+  background-color: var(--color-navy);
+}
+
+/* Links - default state */
+.navbar-nav .nav-link {
+  color: var(--color-sand);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Links - hover */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active {
+  color: var(--color-gold);
+}
+
+/* Make the hamburger icon cream */
+.navbar-toggler {
+  border-color: var(--color-cream);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f2e5d2' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: var(--color-teal);
+  border-color: var(--color-teal);
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+  color: #414141;
+  text-decoration: none;
+}
+
+/* Destination Carousel Cropping */
+.custom-carousel {
+  height: 60vh; 
+  background-color: #000; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.custom-carousel .carousel-item,
+.custom-carousel .fade-wrapper,
+.custom-carousel img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.carousel-caption {
+  bottom: auto;
+  bottom: 15%;
+  background-color: rgba(15, 17, 33, 0.73);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;       
+  left: 50%;                 
+  transform: translateX(-50%) translateY(-20%);
+  position: absolute; 
+}
+
+
+
+/* Destination Carousel Before/After fading */
+.fade-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.fade-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.fade-img.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fadeInAfter 3s ease-in-out 1 forwards;
+  opacity: 0;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInAfter {
+  to {
+    opacity: 1;
+  }
+}
