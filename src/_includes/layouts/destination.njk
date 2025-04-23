@@ -1,0 +1,110 @@
+---
+layout: base.njk
+---
+
+<section class="hero-overlay-container position-relative">
+  <div class="fade-wrapper">
+    <img src="{{ image_before }}" class="fade-img base" alt="{{ alt_before }}">
+    <img src="{{ image_after }}" class="fade-img overlay" alt="{{ alt_after }}">
+  </div>
+
+  <div class="destination-overlay-text text-white position-absolute top-50 start-50 translate-middle text-center p-4">
+    <h1>{{ title }}</h1>
+    {% if subtitle %}
+      <h3 class="dest-sub fst-italic">{{ subtitle }}</h3>
+    {% endif %}
+    <p class="mt-3">{{ intro }}</p>
+  </div>
+</section>
+
+<section class="container destination-itinerary-toggle narrow-itinerary">
+  <div id="itinerary-now" class="itinerary-toggle">
+    {{ book_now_html | safe }}
+  </div>
+
+  <div id="itinerary-wait" class="itinerary-toggle d-none">
+    {{ wait_later_html | safe }}
+  </div>
+</section>
+
+{% if timeline_html %}
+<section class="container my-5 narrow-section">
+  <h4 class="neg">Estimated Shift Timeline</h4>
+  {{ timeline_html | safe }}
+</section>
+{% endif %}
+
+{% if availability %}
+<section class="container my-5 narrow-section">
+  <h4 class="neg">Availability Notice</h4>
+  <p>{{ availability }}</p>
+</section>
+{% endif %}
+
+{% if sources_html %}
+<section class="container my-5 narrow-section">
+  <h4>Sources</h4>
+  {{ sources_html | safe }}
+</section>
+{% endif %}
+
+{% if countdownDeadline %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const deadline = new Date("{{ countdownDeadline | safe }}").getTime();
+
+    function formatCountdownText(distance) {
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    function updateCountdowns() {
+      const now = new Date().getTime();
+      const distance = deadline - now;
+
+      const countdownNow = document.getElementById("countdown-now");
+      const countdownFuture = document.getElementById("countdown-future");
+
+      if (distance <= 0) {
+        if (countdownNow) countdownNow.innerHTML = "<strong>This itinerary has expired.</strong>";
+        if (countdownFuture) countdownFuture.innerHTML = "<strong>This experience is now available.</strong>";
+        return;
+      }
+
+      const formatted = formatCountdownText(distance);
+
+      if (countdownNow) {
+        countdownNow.innerHTML = `<em>Limited access ends in ${formatted}</em>`;
+      }
+
+      if (countdownFuture) {
+        countdownFuture.innerHTML = `<em>Exclusive access launches in ${formatted}</em>`;
+      }
+    }
+
+    updateCountdowns();
+    setInterval(updateCountdowns, 1000);
+
+    // Itinerary toggle logic 
+    const nowSection = document.getElementById("itinerary-now");
+    const waitSection = document.getElementById("itinerary-wait");
+
+    document.querySelectorAll(".show-wait").forEach(btn => {
+      btn.addEventListener("click", () => {
+        nowSection.classList.add("d-none");
+        waitSection.classList.remove("d-none");
+      });
+    });
+
+    document.querySelectorAll(".show-now").forEach(btn => {
+      btn.addEventListener("click", () => {
+        waitSection.classList.add("d-none");
+        nowSection.classList.remove("d-none");
+      });
+    });
+  });
+</script>
+{% endif %}
