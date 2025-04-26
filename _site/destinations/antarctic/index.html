@@ -47,8 +47,174 @@
 
 
 <main>
-  <h1>Antarctic Peninsula</h1>
-<p><em>Coming soon!</em></p>
+  
+<section class="hero-overlay-container position-relative">
+  <div class="fade-wrapper">
+    <img src="/assets/antarctic_before.png" class="fade-img base" alt="Expansive white ice shelf and sea">
+    <img src="/assets/antarctic_after.png" class="fade-img overlay" alt="Collapsed ice shelf and open water">
+  </div>
+
+  <div class="destination-overlay-text text-white position-absolute top-50 start-50 translate-middle text-center p-4">
+    <h1>Antarctic Peninsula</h1>
+    
+      <h3 class="dest-sub fst-italic">The Last Frontier — Breaking Apart</h3>
+    
+    <p class="mt-3">The Antarctic Peninsula, Earth&#39;s southernmost wilderness, is a testament to raw beauty and resilience. But warming seas and collapsing ice shelves threaten to unravel this remote sanctuary.
+</p>
+  </div>
+</section>
+
+<section id="itinerary-section" class="container destination-itinerary-toggle narrow-itinerary">
+  <div id="itinerary-now" class="itinerary-toggle">
+    <div class="text-center mt-4">
+<h5 class="dest-pos text-center">Early Access Antarctic Peninsula Itinerary</h5>
+</div>
+<div id="countdown-now" class="countdown-timer mt-3"></div>
+<br>
+<h6 class="itin-tod">Morning</h6>
+<p><strong>Zodiac Landing on Pristine Ice Shores</strong><br>Step onto remote glaciers and rocky beaches teeming with penguins, guided by polar ecologists.</p>
+<h6 class="itin-tod">Midday</h6>
+<p><strong>Sea Kayaking Along Iceberg Alley</strong><br>Paddle between sculpted icebergs and watch for humpbacks and orcas under the midnight sun.</p>
+<h6 class="itin-tod">Afternoon</h6>
+<p><strong>Historic Research Station Tour</strong><br>Visit active scientific outposts and learn about ongoing climate monitoring efforts firsthand.</p>
+<h6 class="itin-tod">Evening</h6>
+<p><strong>Sunset Toast at the Edge of the World</strong><br>Celebrate the endless twilight with champagne atop an ice shelf. Certified cold-weather apparel provided.</p>
+<br>
+<h6>Packing Considerations</h6>
+<ul>
+<li>Insulated, waterproof expedition clothing</li>
+<li>Polar-grade boots with crampons</li>
+<li>SPF-rated cold-weather sunscreen</li>
+<li>High-resolution binoculars</li>
+<li>Thermal base layers</li>
+</ul>
+<div class="text-center mt-4">
+<button class="show-wait btn btn-outline-light">View Future Itinerary</button>
+</div>
+
+  </div>
+
+  <div id="itinerary-wait" class="itinerary-toggle d-none">
+    <div class="text-center mt-4">
+<h5 class="dest-sub text-center">The Antarctic Relic Experience Itinerary</h5>
+</div>
+<div id="countdown-future" class="countdown-timer mt-3"></div>
+<br>
+<h6 class="itin-tod-neg">Morning</h6>
+<p><strong>Hovercraft Glide Over Exposed Bedrock</strong><br>Skim across ice-free terrains revealed by rapid glacial retreat. Narrated geological insights en route.</p>
+<h6 class="itin-tod-neg">Midday</h6>
+<p><strong>Ice Archive Exhibit Visit</strong><br>Tour a cryogenic facility preserving ancient ice cores, atmospheric samples, and lost microfauna.</p>
+<h6 class="itin-tod-neg">Afternoon</h6>
+<p><strong>Submerged Ice Shelf Dive</strong><br>Witness the underwater remnants of collapsed ice shelves. Includes memory-capture helmet rental.</p>
+<h6 class="itin-tod-neg">Evening</h6>
+<p><strong>Polar Twilight Immersion Theatre</strong><br>Experience a 360° simulation of the vanished peninsula landscape, recreated using archival drone footage.</p>
+<br>
+<h6>Packing Considerations</h6>
+<ul>
+<li>Insulating suits adapted for hovercraft and immersion zones</li>
+<li>UV-protective snow goggles</li>
+<li>Personal climate regulation gear</li>
+<li>Waterproof archival data viewer (rental available)</li>
+</ul>
+<p class="small fst-italic text-muted">All guests receive a preserved microfauna hologram upon departure.</p>
+<div class="text-center mt-4">
+<button class="show-now btn btn-outline-light">Back to Current Itinerary</button>
+</div>
+
+  </div>
+</section>
+
+
+<section id="itinerary-section" class="container my-5 narrow-section">
+  <h4 class="neg">Estimated Shift Timeline</h4>
+  <p>Significant ice shelf disintegration is projected by 2100 under high-emission scenarios, with some collapse events (e.g., Larsen B) already observed. Sea-level rise acceleration from Antarctic melt could substantially increase by 2050–2080.</p>
+<p class="neg fst-italic">The last untouched frontier is fragmenting before our eyes.</p>
+
+</section>
+
+
+
+<section class="container my-5 narrow-section">
+  <h4 class="neg">Availability Notice</h4>
+  <p>Visitors are encouraged to explore the peninsula while intact ice landscapes endure. Future expeditions may focus on geological relics and submerged remnants.
+</p>
+</section>
+
+
+
+<section class="container my-5 narrow-section">
+  <h4>Sources</h4>
+  <ul>
+<li>IPCC Special Reports on Polar Regions</li>
+<li>NASA – Antarctic Ice Loss Monitoring</li>
+<li>Nature – “The Fate of the Antarctic Ice Sheet” (2023)</li>
+</ul>
+
+</section>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const deadline = new Date("2085-02-10T12:00:00").getTime();
+
+    function formatCountdownText(distance) {
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    function updateCountdowns() {
+      const now = new Date().getTime();
+      const distance = deadline - now;
+
+      const countdownNow = document.getElementById("countdown-now");
+      const countdownFuture = document.getElementById("countdown-future");
+
+      if (distance <= 0) {
+        if (countdownNow) countdownNow.innerHTML = "<strong>This itinerary has expired.</strong>";
+        if (countdownFuture) countdownFuture.innerHTML = "<strong>This experience is now available.</strong>";
+        return;
+      }
+
+      const formatted = formatCountdownText(distance);
+
+      if (countdownNow) {
+        countdownNow.innerHTML = `<em>Limited access ends in ${formatted} - BOOK NOW!</em>`;
+      }
+
+      if (countdownFuture) {
+        countdownFuture.innerHTML = `<em>Exclusive access launches in ${formatted} - Reserve a spot TODAY!</em>`;
+      }
+    }
+
+    updateCountdowns();
+    setInterval(updateCountdowns, 1000);
+
+    // Itinerary toggle logic 
+    const nowSection = document.getElementById("itinerary-now");
+    const waitSection = document.getElementById("itinerary-wait");
+
+    document.querySelectorAll(".show-wait").forEach(btn => {
+      btn.addEventListener("click", () => {
+        nowSection.classList.add("d-none");
+        waitSection.classList.remove("d-none");
+        document.getElementById("itinerary-section").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    document.querySelectorAll(".show-now").forEach(btn => {
+      btn.addEventListener("click", () => {
+        waitSection.classList.add("d-none");
+        nowSection.classList.remove("d-none");
+        document.getElementById("itinerary-section").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  });
+</script>
+
 
 </main>
 

@@ -186,9 +186,10 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="position-fixed top-0 start-0 w-100 h-100 overflow-hidden z-1">
         <img src="${imageBefore}" class="fade-img base position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="${name} before">
         <img src="${imageAfter}" class="fade-img overlay position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="${name} after">
-        <div class="position-absolute top-50 start-50 translate-middle text-center text-white px-5 py-4" style="background-color: rgba(15, 17, 33, 0.65); border-radius: 0.75rem; max-width: 90%;">
-          <h3 class="mb-3">Your perfect destination is: ${name}</h3>
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white px-5 py-4" style="background-color: rgba(15, 17, 33, 0.91); border-radius: 0.75rem; max-width: 90%;">
+          <h1 class="mb-3">Your perfect destination is: ${name}</h1>
           <a href="${link}" class="btn btn-primary">Explore ${name}</a>
+          <br>
           <p class="mt-4">
             <button id="retake-quiz" class="btn btn-outline-light">Feel like this isn’t quite you? Try again.</button>
           </p>

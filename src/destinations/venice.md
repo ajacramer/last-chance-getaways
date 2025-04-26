@@ -1,4 +1,5 @@
 ---
+countdownDeadline: "2150-08-25T12:00:00"
 layout: layouts/destination.njk
 title: Venice
 subtitle: Where Water and Elegance Rise Together
@@ -12,7 +13,8 @@ intro: >
   A timeless destination of canals, art, and gilded decadence. Whether you arrive for the architecture, the aperitifs, or the atmosphere, Venice offers an experience like no other — timeless in spirit and increasingly rare in form.
 
 book_now_html: |
-  <h5 class="dest-pos">Itinerary Highlights – Early Access Venice</h5>
+  <h5 class="dest-pos">Early Access Venice Itinerary</h5>
+    <div id="countdown-now" class="countdown-timer mt-3"></div>
     <br>
   <h6 class="itin-tod">Morning</h6>
   <p><strong>Private Walking Tour of St. Mark’s Square</strong><br>
@@ -43,28 +45,32 @@ book_now_html: |
     <li>Reusable water bottle</li>
     <li>Waterproof clutch or bag liner</li>
   </ul>
+      <div class="text-center mt-4">
+        <button class="show-wait btn btn-outline-light">View Future Itinerary</button>
+    </div>
 
 wait_later_html: |
-  <h5 class="dest-sub">Projected Itinerary – The Immersive Collection</h5>
-  <br>
+  <h5 class="dest-sub">The Immersive Collection Itinerary</h5>
+      <div id="countdown-future" class="countdown-timer mt-3"></div>
+      <br>
 
-  <h6 class="itin-tod">Morning</h6>
+  <h6 class="itin-tod-neg">Morning</h6>
   <p><strong>Submersible Arrival Tour of St. Mark’s Square</strong><br>
   Arrive via autonomous capsule equipped with panoramic lenses as you descend through what remains of St. Mark’s submerged structures.</p>
 
-  <h6 class="itin-tod">Midday</h6>
+  <h6 class="itin-tod-neg">Midday</h6>
   <p><strong>Floating Tasting Menu: Above the Grand Canal</strong><br>
   Taste the essence of a drowned city as chefs reconstruct traditional Venetian cuisine aboard a stabilized hover raft with seating pods arranged around aerial photos of the lost streets.</p>
 
-  <h6 class="itin-tod">Afternoon</h6>
+  <h6 class="itin-tod-neg">Afternoon</h6>
   <p><strong>AI-Rendered Opera Experience</strong><br>
   Listen to an AI-enhanced reconstruction of La Fenice’s final recorded performance. Audio-responsive visuals shimmer through your headset as fragments of history are projected against reclaimed stone.</p>
 
-  <h6 class="itin-tod">Evening</h6>
+  <h6 class="itin-tod-neg">Evening</h6>
   <p><strong>Scuba Dive: Grand Canal Descent</strong><br>
   Dive between pillars of flooded facades with waterproof headsets narrating what once stood at surface level. Swim-throughs include partially intact cafes and bell towers.</p>
 
-  <h6 class="itin-tod">Night</h6>
+  <h6 class="itin-tod-neg">Night</h6>
   <p><strong>Elevated Dining: SkyDeck Capsule</strong><br>
   Ascend via aerial tram to a suspended capsule high above the lagoon for your final meal of the day, accompanied by atmospheric data visualization projections of the water below.</p>
     <br>
@@ -81,6 +87,9 @@ wait_later_html: |
   <p class="small fst-italic text-muted">
     All guests receive a complimentary emergency ascent whistle upon arrival.
   </p>
+      <div class="text-center mt-4">
+        <button class="show-now btn btn-outline-light">Back to Current Itinerary</button>
+    </div>
 
 timeline_html: |
   <p>Based on sea-level projections from the IPCC and the Venice Lagoon Authority, partial submersion of central Venice is anticipated between 2060 and 2100, with full infrastructure access disruptions possible by 2150 under high-emission scenarios.</p>

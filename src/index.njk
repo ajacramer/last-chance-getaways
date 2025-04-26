@@ -8,20 +8,22 @@ title: Last Chance Getaways
   <img src="/assets/hero-image.png" class="img-fluid w-100" alt="Hero Image" style="height: 100vh; object-fit: cover;" />
 
   <!-- Full-width translucent background bar -->
-    <div class="position-absolute start-50 translate-middle-x w-100 text-center" style="top: 60%; background: rgba(15, 17, 33, 0.73); padding: 1rem 1rem;">
-      <div class="mx-auto" style="max-width: 750px;">
-        <h1 class="display-5 fw-bold">Exceptional Destinations. <span class="golden">Limited Time Only.</span></h1>
+    <div class="position-absolute start-50 translate-middle-x w-100 text-center" style="top: 40%; background: rgba(15, 17, 33, 0.73); padding: 2rem 1rem;">
+      <div class="mx-auto" style="max-width: 900px;">
+        <h1 class="display-5 fw-bold">Exceptional Destinations.</h1>
+        <h1 class="golden">Limited Time Only.</h1>
         <p class="lead">
           Explore the world's most breathtaking locations before <i>(or after)</i> they disappear.
           Witness Earth’s fragile landscapes undergoing rapid transformation. 
           From vanishing coastlines to melting glaciers, Last Chance Getaways invites you to witness natural beauty in its final moments.
         </p>
+        <a href="/quiz" class="btn btn-primary mt-3">Discover My Ideal Destination</a>
       </div>
     </div>
 </section>
 
 <!-- About Section -->
-<section class="container my-3 text-center" style="max-width: 1200px; padding: 3rem 1rem;">
+<section class="container my-3 text-center" style="max-width: 800px; padding: 7rem 2rem;">
   <h2>About Our Experiences</h2><br>
 
   <p class="lead">Our curated travel experiences are designed to evolve based on current and anticipated conditions. Seasonal variations and environmental shifts are not seen as disruptions but as opportunities to discover destinations in their most dynamic states.</p>
@@ -33,10 +35,11 @@ title: Last Chance Getaways
 
 <!-- Destination Carousel Section (Full Width) -->
 <section id="destinations" class="container-fluid px-0 mt-5">
-  <div id="destinationCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel" data-bs-interval="6000">
-    <div class="carousel-inner">
+<div id="destinationCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+  <div class="carousel-inner">
 
-      <div class="carousel-item active">
+    <div class="carousel-item active">
+      <a href="/destinations/venice/" class="d-block text-decoration-none text-reset">
         <div class="fade-wrapper">
           <img src="/assets/venice_before.png" class="fade-img base" alt="Venice Before">
           <img src="/assets/venice_after.png" class="fade-img overlay" alt="Venice After">
@@ -45,75 +48,83 @@ title: Last Chance Getaways
           <h3>Venice, Italy</h3>
           <p class="lead">Book a twilight gondola ride through a sinking dream.</p>
         </div>
-      </div>
+      </a>
+    </div>
 
-      <div class="carousel-item">
+    <div class="carousel-item">
+      <a href="/destinations/reef/" class="d-block text-decoration-none text-reset">
         <div class="fade-wrapper">
-          <img src="/assets/coral_reef_before.png" class="fade-img base" alt="Venice Before">
-          <img src="/assets/coral_reef_after.png" class="fade-img overlay" alt="Venice After">
+          <img src="/assets/coral_reef_before.png" class="fade-img base" alt="Reef Before">
+          <img src="/assets/coral_reef_after.png" class="fade-img overlay" alt="Reef After">
         </div>
         <div class="carousel-caption">
           <h3>Great Barrier Reef</h3>
-          <p class="lead">Snorkel the world's largest reef — while it still breathes.</p>
+          <p class="lead">Snorkel coral gardens before they're memories.</p>
         </div>
-      </div>
+      </a>
+    </div>
 
-      <div class="carousel-item">
+    <div class="carousel-item">
+      <a href="/destinations/glacier/" class="d-block text-decoration-none text-reset">
         <div class="fade-wrapper">
-          <img src="/assets/glacial_before.png" class="fade-img base" alt="Glacial National Park Before">
-          <img src="/assets/glacial_after.png" class="fade-img overlay" alt="Glacial National Park After">
+          <img src="/assets/glacial_before.png" class="fade-img base" alt="Glacier Before">
+          <img src="/assets/glacial_after.png" class="fade-img overlay" alt="Glacier After">
         </div>
         <div class="carousel-caption">
           <h3>Glacier National Park</h3>
-          <p class="lead">See the last glacier before it's a ghost.</p>
+          <p class="lead">Hike snowcaps before they become archives.</p>
         </div>
-      </div>
+      </a>
+    </div>
 
-      <div class="carousel-item">
+    <div class="carousel-item">
+      <a href="/destinations/amazon/" class="d-block text-decoration-none text-reset">
         <div class="fade-wrapper">
-          <img src="/assets/amazon_before.png" class="fade-img base" alt="Amazon Basin Before">
-          <img src="/assets/amazon_after.png" class="fade-img overlay" alt="Amazon Basin After">
+          <img src="/assets/amazon_before.png" class="fade-img base" alt="Amazon Before">
+          <img src="/assets/amazon_after.png" class="fade-img overlay" alt="Amazon After">
         </div>
         <div class="carousel-caption">
           <h3>Amazon Basin</h3>
-          <p class="lead">Drift through a vanishing rainforest frontier.</p>
+          <p class="lead">Wander the lungs of Earth while they last.</p>
         </div>
-      </div>
+      </a>
+    </div>
 
-      <div class="carousel-item">
+    <div class="carousel-item">
+      <a href="/destinations/antarctic/" class="d-block text-decoration-none text-reset">
         <div class="fade-wrapper">
           <img src="/assets/antarctic_before.png" class="fade-img base" alt="Antarctic Before">
           <img src="/assets/antarctic_after.png" class="fade-img overlay" alt="Antarctic After">
         </div>
         <div class="carousel-caption">
           <h3>Antarctic Peninsula</h3>
-          <p class="lead">Wander the white before the melt rewrites the map.</p>
+          <p class="lead">Venture to the edge of the melting world.</p>
         </div>
-      </div>
-
+      </a>
     </div>
 
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-
   </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 </section>
 
 <!-- Quiz CTA Section -->
-<section class="container my-3 text-center" style="max-width: 900px; padding: 3rem 1rem;">
+<section class="container my-3 text-center" style="max-width: 800px; padding: 4rem 1rem;">
   <h2>Tailored Travel Begins Here</h2><br>
 
   <p class="lead">Every journey begins with the right match. Our travel profile tool considers your preferences, habits, and ideal pace to recommend a destination tailored to your unique outlook.</p><br>
 
   <p class="lead">From serene isolation to immersive extremes, our portfolio offers a range of environments undergoing remarkable change. The best time to go was yesterday. The second-best time is now.</p>
 
-<a href="/quiz" class="btn btn-primary mt-3">Discover My Ideal Destination →</a>
+  <br>
+  <a href="/quiz" class="btn btn-primary mt-3">Discover My Ideal Destination</a>
 
 </section>

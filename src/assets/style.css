@@ -4,13 +4,30 @@
     --color-navy: #191c36;
     --color-cream: #f2e5d2;
     --color-sand: #d7d0c6;
-    --color-teal: #29adc1;
+    --color-teal: #2596a8;
     --color-gold: #e9cb5c;
+    --color-red: #601c1c;
   }
   
   body {
     background-color: var(--color-navy);
+    background-image: url('/assets/b_pattern.png'); 
+    background-repeat: repeat; 
+    background-size: 50%; /* or contain, or cover depending on look */
+    background-position: top left; 
+    background-attachment: fixed; 
     color: var(--color-sand);
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 28, 54, 0.85); /* semi-transparent navy */
+    z-index: -1;
   }
   
   a {
@@ -23,11 +40,13 @@
   }
 
   h1 {
-    font-family: amandine, sans-serif;
-    font-weight: 700;
+    font-family: "circe", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
     font-style: normal;
     color: var(--color-white);
     letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
   .golden {
@@ -35,10 +54,15 @@
     letter-spacing: 0.0em;
   }
 
-  h2, h3, h4 {
-    font-family: amandine, sans-serif;
+  h2 {
+    font-size: 3rem;
+    font-family: "circe", sans-serif;
     font-weight: 700;
-    letter-spacing: 0.08em;
+  }
+
+h3, h4 {
+    font-family: "circe", sans-serif;
+    font-weight: 700;
   }
 
   p {
@@ -87,9 +111,17 @@
   background-color: var(--color-teal);
   border-color: var(--color-teal);
   color: #ffffff;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.03em;
   transition: all 0.3s ease;
+  padding: 1rem 2rem;
+}
+
+button:hover,
+.btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-primary:hover,
@@ -103,11 +135,14 @@
 /* Destination Carousel Cropping */
 .custom-carousel {
   height: 60vh; 
+  width: 60%;
+  margin: auto;
   background-color: var(--color-navy); 
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-radius: 1rem;
 }
 
 .custom-carousel .carousel-item,
@@ -120,11 +155,9 @@
 }
 
 .carousel-caption {
-  bottom: auto;
-  bottom: 15%;
+  bottom: 5rem;
   background-color: rgba(15, 17, 33, 0.73);
   padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
   width: 100%;
   text-align: center;       
   left: 50%;                 
@@ -169,6 +202,46 @@
   }
 }
 
+/* Destination Carousel Interactive Hover */
+.carousel-inner a {
+  display: block;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-origin: center center;
+  position: relative;
+}
+
+.carousel-inner a:hover {
+  transform: scale(1.10);
+}
+
+.carousel-inner a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 0.5rem;
+}
+
+.carousel-inner a:hover::after {
+  opacity: 1;
+}
+
+.carousel-inner a:hover .carousel-caption h3 {
+  color: var(--color-gold);
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+
+.carousel-inner a:hover .carousel-caption p {
+  color: var(--color-gold);
+  font-weight: bolder;
+}
+
+
 
 /* Destination Pages Template Styling */
 .hero-overlay-container {
@@ -201,13 +274,13 @@
 
 @keyframes colorFadeLoop {
   0% {
-    color: var(--color-teal);
+    color: white;
   }
   50% {
     color: var(--color-gold);
   }
   100% {
-    color: var(--color-teal);
+    color: white;
   }
 }
 
@@ -216,13 +289,20 @@
 }
 
 h3.dest-sub, h5.dest-sub {
-  color: var(--color-gold);
-  font-style: italic;
+  color: var(--color-red);
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
 }
 
 h3.dest-pos, h5.dest-pos {
   color: var(--color-teal);
-  font-style: italic;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 h2.pos {
@@ -240,7 +320,12 @@ p.neg {
 }
 
 h6.itin-tod {
-  color: var(--color-sand);
+  color: var(--color-teal);
+  font-style: italic;
+}
+
+h6.itin-tod-neg {
+  color: var(--color-red);
   font-style: italic;
 }
 
@@ -309,17 +394,82 @@ h6.itin-tod {
 
 }
 
+/* Itinerary Styling */
+.narrow-itinerary {
+  margin-top: 2rem;
+  max-width: 750px;
+  padding: 1rem 2rem;
+  background-color: #e8e4dceb;
+  color: var(--color-navy);
+  border-radius: 1rem;
+}
+
 .narrow-section {
-  max-width: 800px;
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(219, 176, 59, 0.433); /* translucent gold */
   padding: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
+
+/* .narrow-itinerary h3 {
+  color: var(--color-teal);
+} */
+
+.narrow-itinerary h2,
+.narrow-itinerary h4,
+.narrow-itinerary p,
+.narrow-itinerary li {
+  color: var(--color-navy);
+}
+
+.show-wait {
+  background-color: var(--color-gold);
+  color: var(--color-red);
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+}
+
+.show-wait:hover {
+  background-color: var(--color-red);
+  color: var(--color-gold);
+  cursor: pointer;
+}
+
+.show-now {
+  background-color: var(--color-teal);
+  color: var(--color-navy);
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+}
+
+.show-now:hover {
+  background-color: var(--color-navy);
+  color: white;
+  cursor: pointer;
+}
+
 
 /* Quiz Styling */
 /* Quiz container styling */
+.quiz-container {
+  background-color: rgba(41, 173, 193, 0.25);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 #quiz-form {
   padding: 2rem;
   border-radius: 0.75rem;
@@ -394,15 +544,15 @@ h6.itin-tod {
 
 /* Countdown Timer */
 .countdown-timer {
-  font-family: var(--font-subheader, sans-serif);
-  font-size: 1.2rem;
-  color: var(--color-gold);
-  padding: 0.75rem 0;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-red);
+  background-color: var(--color-gold);
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
-.narrow-itinerary {
-  max-width: 750px;
-  padding: 1rem;
-}

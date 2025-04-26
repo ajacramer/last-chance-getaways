@@ -13,9 +13,8 @@ intro: >
   Spanning over 2,300 kilometers of vibrant marine ecosystems, the Great Barrier Reef offers travelers a once-in-a-lifetime opportunity to witness breathtaking biodiversity, crystalline waters, and underwater majesty. Whether you come for the coral gardens or the sea turtles, this destination rewards those who don’t wait.
 
 book_now_html: |
-  <h3 class="dest-pos">Early Access Reef Itinerary</h3>
-    <div class="text-center mt-4">
-        <button class="show-wait btn btn-outline-light">View Future Itinerary</button>
+  <div class="text-center mt-4">
+      <h5 class="dest-pos text-center">Early Access Reef Itinerary</h3>
     </div>
   <div id="countdown-now" class="countdown-timer mt-3"></div>
   <br>
@@ -41,33 +40,31 @@ book_now_html: |
     <li>Reef-safe swimwear and biodegradable sunscreen</li>
     <li>Lightweight resort attire for beach and aerial travel</li>
     <li>Quick-dry towel or lightweight wrap</li>
-    <li>Comfortable sandals or reef shoes for cay access</li>
+    <li>Comfortable sandals or reef shoes</li>
   </ul>
-  <br>
     <div class="text-center mt-4">
         <button class="show-wait btn btn-outline-light">View Future Itinerary</button>
     </div>
 
 wait_later_html: |
-  <h3 class="dest-sub">The Archive Reef Collection Itinerary</h3>
-    <div class="text-center mt-4">
-        <button class="show-now btn btn-outline-light">Back to Current Itinerary</button>
+  <div class="text-center mt-4">
+      <h5 class="dest-sub text-center">The Archive Reef Collection Itinerary</h3>
     </div>
       <div id="countdown-future" class="countdown-timer mt-3"></div>
-  <br>
-  <h6 class="itin-tod">Morning</h6>
+      <br>
+  <h6 class="itin-tod-neg">Morning</h6>
   <p><strong>Aerial Flyover of the Reef Remnants</strong><br>
   Begin your journey with a scenic flight over the Reef Preservation Zone. Once-vibrant coral systems are now visible as faded skeletal outlines beneath the surface. An onboard naturalist narrates ecological shifts while biodiversity overlays appear through windowpane tinting.</p>
 
-  <h6 class="itin-tod">Midday</h6>
+  <h6 class="itin-tod-neg">Midday</h6>
   <p><strong>Simulated Snorkel: Coral Memory Tank</strong><br>
   Step into a temperature-controlled immersion chamber replicating historic reef conditions. Navigate AI-rendered coral formations while narrators highlight extinct species and former reef functions. A personalized biofeedback souvenir is available upon exit.</p>
 
-  <h6 class="itin-tod">Afternoon</h6>
+  <h6 class="itin-tod-neg">Afternoon</h6>
   <p><strong>Tasting Menu & Turtle Archive Encounter</strong><br>
   Dine at the Archive Cay Pavilion with a curated kelp-based tasting menu inspired by lost reef ecosystems. Then, visit a preserved sea turtle habitat where nesting behaviors are mimicked by ambient light sculptures with subtle kinetic movements.</p>
 
-  <h6 class="itin-tod">Evening</h6>
+  <h6 class="itin-tod-neg">Evening</h6>
   <p><strong>Twilight Paddle Along the Former Reef Line</strong><br>
   Glide through the mangrove-lined coastline once connected to the reef system. This guided night paddle features gentle lighting, motion-responsive glow paddles, and commentary on shifting marine boundaries. End with a locally distilled botanical nightcap beneath the stars.</p>
 
@@ -80,7 +77,6 @@ wait_later_html: |
     <li>Closed-toe water shoes for shoreline access and paddleboard stability</li>
   </ul>
   <p class="small fst-italic text-muted">All guests receive a commemorative coral remnant upon departure.</p>
-    <br>
     <div class="text-center mt-4">
         <button class="show-now btn btn-outline-light">Back to Current Itinerary</button>
     </div>

@@ -47,8 +47,175 @@
 
 
 <main>
-  <h1>Amazon Basin</h1>
-<p><em>Coming soon!</em></p>
+  
+<section class="hero-overlay-container position-relative">
+  <div class="fade-wrapper">
+    <img src="/assets/amazon_before.png" class="fade-img base" alt="Dense vibrant rainforest">
+    <img src="/assets/amazon_after.png" class="fade-img overlay" alt="Deforested dry landscape">
+  </div>
+
+  <div class="destination-overlay-text text-white position-absolute top-50 start-50 translate-middle text-center p-4">
+    <h1>Amazon Basin</h1>
+    
+      <h3 class="dest-sub fst-italic">The Lungs of the Earth — Losing Breath</h3>
+    
+    <p class="mt-3">Stretching across nine countries, the Amazon Basin teems with life. Its vast rainforests regulate global climate and shelter unmatched biodiversity. But rampant deforestation threatens to tip this cradle of life toward collapse.
+</p>
+  </div>
+</section>
+
+<section id="itinerary-section" class="container destination-itinerary-toggle narrow-itinerary">
+  <div id="itinerary-now" class="itinerary-toggle">
+    <div class="text-center mt-4">
+<h5 class="dest-pos text-center">Early Access Amazon Itinerary</h5>
+</div>
+<div id="countdown-now" class="countdown-timer mt-3"></div>
+<br>
+<h6 class="itin-tod">Morning</h6>
+<p><strong>Canoe Excursion Through Primary Rainforest</strong><br>Navigate winding tributaries flanked by towering ceibas and vibrant wildlife. Guided by local conservationists.</p>
+<h6 class="itin-tod">Midday</h6>
+<p><strong>Jungle Canopy Dining Experience</strong><br>Ascend to a suspended platform for a rainforest tasting menu using indigenous ingredients. Birdwatching binoculars provided.</p>
+<h6 class="itin-tod">Afternoon</h6>
+<p><strong>Medicinal Plant Walk</strong><br>Explore traditional knowledge of rainforest flora with a local healer. Includes hands-on preparation of herbal remedies.</p>
+<h6 class="itin-tod">Evening</h6>
+<p><strong>Sunset River Cruise</strong><br>Glide through mirrored waters as pink river dolphins surface. Includes live Amazonian folk music and storytelling session.</p>
+<br>
+<h6>Packing Considerations</h6>
+<ul>
+<li>Lightweight moisture-wicking clothing</li>
+<li>Mosquito-repellent outerwear</li>
+<li>Waterproof boots for riverbanks</li>
+<li>Portable solar charger</li>
+<li>Drybag for valuables</li>
+</ul>
+<div class="text-center mt-4">
+<button class="show-wait btn btn-outline-light">View Future Itinerary</button>
+</div>
+
+  </div>
+
+  <div id="itinerary-wait" class="itinerary-toggle d-none">
+    <div class="text-center mt-4">
+<h5 class="dest-sub text-center">The Residual Rainforest Archive Itinerary</h5>
+</div>
+<div id="countdown-future" class="countdown-timer mt-3"></div>
+<br>
+<h6 class="itin-tod-neg">Morning</h6>
+<p><strong>Biodiversity Virtual Museum Tour</strong><br>Walk through an immersive AI recreation of vanished rainforest habitats. Features 360° soundscapes of extinct species.</p>
+<h6 class="itin-tod-neg">Midday</h6>
+<p><strong>Vertical Farm Picnic</strong><br>Dine within an urban vertical farm replicating Amazonian crops. Menus curated with synthetic rainforest flavors.</p>
+<h6 class="itin-tod-neg">Afternoon</h6>
+<p><strong>Cultural Heritage VR Encounters</strong><br>Interact with recorded knowledge from Amazonian tribes using augmented storytelling devices in a controlled setting.</p>
+<h6 class="itin-tod-neg">Evening</h6>
+<p><strong>Deforestation Memory Projection</strong><br>Attend an open-air light installation tracing lost river paths and extinct animal migrations. End with an eco-futurism panel discussion.</p>
+<br>
+<h6>Packing Considerations</h6>
+<ul>
+<li>Breathable climate-adaptive clothing</li>
+<li>Anti-microbial footwear for humid installations</li>
+<li>VR-compatible headset (optional rental)</li>
+<li>Hydration supplements for enclosed environments</li>
+<li>Compact air purifiers for urban experience centers</li>
+</ul>
+<p class="small fst-italic text-muted">All guests receive a commemorative seed artifact upon departure.</p>
+<div class="text-center mt-4">
+<button class="show-now btn btn-outline-light">Back to Current Itinerary</button>
+</div>
+
+  </div>
+</section>
+
+
+<section id="itinerary-section" class="container my-5 narrow-section">
+  <h4 class="neg">Estimated Shift Timeline</h4>
+  <p>At current deforestation rates, 40% of the Amazon rainforest could be lost by 2050. A tipping point may be reached as early as 2030–2040, beyond which the basin could transition into dry savannah.</p>
+<p class="neg fst-italic">The Amazon’s role as a climate stabilizer is rapidly diminishing.</p>
+
+</section>
+
+
+
+<section class="container my-5 narrow-section">
+  <h4 class="neg">Availability Notice</h4>
+  <p>Guests are encouraged to experience the Amazon’s unmatched biodiversity while intact habitats remain accessible. Future experiences will increasingly shift toward virtual preservation.
+</p>
+</section>
+
+
+
+<section class="container my-5 narrow-section">
+  <h4>Sources</h4>
+  <ul>
+<li>WWF Living Amazon Report</li>
+<li>IPCC Climate Change Reports</li>
+<li>Nature – "The Amazon tipping point: A looming crisis" (2020)</li>
+</ul>
+
+</section>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const deadline = new Date("2040-11-15T12:00:00").getTime();
+
+    function formatCountdownText(distance) {
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    function updateCountdowns() {
+      const now = new Date().getTime();
+      const distance = deadline - now;
+
+      const countdownNow = document.getElementById("countdown-now");
+      const countdownFuture = document.getElementById("countdown-future");
+
+      if (distance <= 0) {
+        if (countdownNow) countdownNow.innerHTML = "<strong>This itinerary has expired.</strong>";
+        if (countdownFuture) countdownFuture.innerHTML = "<strong>This experience is now available.</strong>";
+        return;
+      }
+
+      const formatted = formatCountdownText(distance);
+
+      if (countdownNow) {
+        countdownNow.innerHTML = `<em>Limited access ends in ${formatted} - BOOK NOW!</em>`;
+      }
+
+      if (countdownFuture) {
+        countdownFuture.innerHTML = `<em>Exclusive access launches in ${formatted} - Reserve a spot TODAY!</em>`;
+      }
+    }
+
+    updateCountdowns();
+    setInterval(updateCountdowns, 1000);
+
+    // Itinerary toggle logic 
+    const nowSection = document.getElementById("itinerary-now");
+    const waitSection = document.getElementById("itinerary-wait");
+
+    document.querySelectorAll(".show-wait").forEach(btn => {
+      btn.addEventListener("click", () => {
+        nowSection.classList.add("d-none");
+        waitSection.classList.remove("d-none");
+        document.getElementById("itinerary-section").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    document.querySelectorAll(".show-now").forEach(btn => {
+      btn.addEventListener("click", () => {
+        waitSection.classList.add("d-none");
+        nowSection.classList.remove("d-none");
+        document.getElementById("itinerary-section").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  });
+</script>
+
 
 </main>
 

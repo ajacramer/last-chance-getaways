@@ -64,9 +64,10 @@
   </div>
 </section>
 
-<section class="container destination-itinerary-toggle narrow-itinerary">
+<section id="itinerary-section" class="container destination-itinerary-toggle narrow-itinerary">
   <div id="itinerary-now" class="itinerary-toggle">
-    <h5 class="dest-pos">Itinerary Highlights – Early Access Venice</h5>
+    <h5 class="dest-pos">Early Access Venice Itinerary</h5>
+  <div id="countdown-now" class="countdown-timer mt-3"></div>
   <br>
 <h6 class="itin-tod">Morning</h6>
 <p><strong>Private Walking Tour of St. Mark’s Square</strong><br>
@@ -97,30 +98,34 @@ Dine above the city lights with views of lapping canal waters and slowly encroac
   <li>Reusable water bottle</li>
   <li>Waterproof clutch or bag liner</li>
 </ul>
+    <div class="text-center mt-4">
+      <button class="show-wait btn btn-outline-light">View Future Itinerary</button>
+  </div>
 
   </div>
 
   <div id="itinerary-wait" class="itinerary-toggle d-none">
-    <h5 class="dest-sub">Projected Itinerary – The Immersive Collection</h5>
-<br>
+    <h5 class="dest-sub">The Immersive Collection Itinerary</h5>
+    <div id="countdown-future" class="countdown-timer mt-3"></div>
+    <br>
 
-<h6 class="itin-tod">Morning</h6>
+<h6 class="itin-tod-neg">Morning</h6>
 <p><strong>Submersible Arrival Tour of St. Mark’s Square</strong><br>
 Arrive via autonomous capsule equipped with panoramic lenses as you descend through what remains of St. Mark’s submerged structures.</p>
 
-<h6 class="itin-tod">Midday</h6>
+<h6 class="itin-tod-neg">Midday</h6>
 <p><strong>Floating Tasting Menu: Above the Grand Canal</strong><br>
 Taste the essence of a drowned city as chefs reconstruct traditional Venetian cuisine aboard a stabilized hover raft with seating pods arranged around aerial photos of the lost streets.</p>
 
-<h6 class="itin-tod">Afternoon</h6>
+<h6 class="itin-tod-neg">Afternoon</h6>
 <p><strong>AI-Rendered Opera Experience</strong><br>
 Listen to an AI-enhanced reconstruction of La Fenice’s final recorded performance. Audio-responsive visuals shimmer through your headset as fragments of history are projected against reclaimed stone.</p>
 
-<h6 class="itin-tod">Evening</h6>
+<h6 class="itin-tod-neg">Evening</h6>
 <p><strong>Scuba Dive: Grand Canal Descent</strong><br>
 Dive between pillars of flooded facades with waterproof headsets narrating what once stood at surface level. Swim-throughs include partially intact cafes and bell towers.</p>
 
-<h6 class="itin-tod">Night</h6>
+<h6 class="itin-tod-neg">Night</h6>
 <p><strong>Elevated Dining: SkyDeck Capsule</strong><br>
 Ascend via aerial tram to a suspended capsule high above the lagoon for your final meal of the day, accompanied by atmospheric data visualization projections of the water below.</p>
   <br>
@@ -137,12 +142,15 @@ Ascend via aerial tram to a suspended capsule high above the lagoon for your fin
 <p class="small fst-italic text-muted">
   All guests receive a complimentary emergency ascent whistle upon arrival.
 </p>
+    <div class="text-center mt-4">
+      <button class="show-now btn btn-outline-light">Back to Current Itinerary</button>
+  </div>
 
   </div>
 </section>
 
 
-<section class="container my-5 narrow-section">
+<section id="itinerary-section" class="container my-5 narrow-section">
   <h4 class="neg">Estimated Shift Timeline</h4>
   <p>Based on sea-level projections from the IPCC and the Venice Lagoon Authority, partial submersion of central Venice is anticipated between 2060 and 2100, with full infrastructure access disruptions possible by 2150 under high-emission scenarios.</p>
 
@@ -173,6 +181,67 @@ Ascend via aerial tram to a suspended capsule high above the lagoon for your fin
 </section>
 
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const deadline = new Date("2150-08-25T12:00:00").getTime();
+
+    function formatCountdownText(distance) {
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    function updateCountdowns() {
+      const now = new Date().getTime();
+      const distance = deadline - now;
+
+      const countdownNow = document.getElementById("countdown-now");
+      const countdownFuture = document.getElementById("countdown-future");
+
+      if (distance <= 0) {
+        if (countdownNow) countdownNow.innerHTML = "<strong>This itinerary has expired.</strong>";
+        if (countdownFuture) countdownFuture.innerHTML = "<strong>This experience is now available.</strong>";
+        return;
+      }
+
+      const formatted = formatCountdownText(distance);
+
+      if (countdownNow) {
+        countdownNow.innerHTML = `<em>Limited access ends in ${formatted} - BOOK NOW!</em>`;
+      }
+
+      if (countdownFuture) {
+        countdownFuture.innerHTML = `<em>Exclusive access launches in ${formatted} - Reserve a spot TODAY!</em>`;
+      }
+    }
+
+    updateCountdowns();
+    setInterval(updateCountdowns, 1000);
+
+    // Itinerary toggle logic 
+    const nowSection = document.getElementById("itinerary-now");
+    const waitSection = document.getElementById("itinerary-wait");
+
+    document.querySelectorAll(".show-wait").forEach(btn => {
+      btn.addEventListener("click", () => {
+        nowSection.classList.add("d-none");
+        waitSection.classList.remove("d-none");
+        document.getElementById("itinerary-section").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    document.querySelectorAll(".show-now").forEach(btn => {
+      btn.addEventListener("click", () => {
+        waitSection.classList.add("d-none");
+        nowSection.classList.remove("d-none");
+        document.getElementById("itinerary-section").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  });
+</script>
 
 
 </main>

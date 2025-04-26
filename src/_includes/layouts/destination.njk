@@ -17,7 +17,7 @@ layout: base.njk
   </div>
 </section>
 
-<section class="container destination-itinerary-toggle narrow-itinerary">
+<section id="itinerary-section" class="container destination-itinerary-toggle narrow-itinerary">
   <div id="itinerary-now" class="itinerary-toggle">
     {{ book_now_html | safe }}
   </div>
@@ -28,7 +28,7 @@ layout: base.njk
 </section>
 
 {% if timeline_html %}
-<section class="container my-5 narrow-section">
+<section id="itinerary-section" class="container my-5 narrow-section">
   <h4 class="neg">Estimated Shift Timeline</h4>
   {{ timeline_html | safe }}
 </section>
@@ -77,11 +77,11 @@ layout: base.njk
       const formatted = formatCountdownText(distance);
 
       if (countdownNow) {
-        countdownNow.innerHTML = `<em>Limited access ends in ${formatted}</em>`;
+        countdownNow.innerHTML = `<em>Limited access ends in ${formatted} - BOOK NOW!</em>`;
       }
 
       if (countdownFuture) {
-        countdownFuture.innerHTML = `<em>Exclusive access launches in ${formatted}</em>`;
+        countdownFuture.innerHTML = `<em>Exclusive access launches in ${formatted} - Reserve a spot TODAY!</em>`;
       }
     }
 
@@ -96,6 +96,7 @@ layout: base.njk
       btn.addEventListener("click", () => {
         nowSection.classList.add("d-none");
         waitSection.classList.remove("d-none");
+        document.getElementById("itinerary-section").scrollIntoView({ behavior: "smooth" });
       });
     });
 
@@ -103,6 +104,7 @@ layout: base.njk
       btn.addEventListener("click", () => {
         waitSection.classList.add("d-none");
         nowSection.classList.remove("d-none");
+        document.getElementById("itinerary-section").scrollIntoView({ behavior: "smooth" });
       });
     });
   });

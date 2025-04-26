@@ -64,11 +64,10 @@
   </div>
 </section>
 
-<section class="container destination-itinerary-toggle narrow-itinerary">
+<section id="itinerary-section" class="container destination-itinerary-toggle narrow-itinerary">
   <div id="itinerary-now" class="itinerary-toggle">
-    <h3 class="dest-pos">Early Access Reef Itinerary</h3>
-  <div class="text-center mt-4">
-      <button class="show-wait btn btn-outline-light">View Future Itinerary</button>
+    <div class="text-center mt-4">
+    <h5 class="dest-pos text-center">Early Access Reef Itinerary</h3>
   </div>
 <div id="countdown-now" class="countdown-timer mt-3"></div>
 <br>
@@ -94,9 +93,8 @@ Enjoy a guided dusk snorkel in warm, shallow waters. Seasonal bioluminescence vi
   <li>Reef-safe swimwear and biodegradable sunscreen</li>
   <li>Lightweight resort attire for beach and aerial travel</li>
   <li>Quick-dry towel or lightweight wrap</li>
-  <li>Comfortable sandals or reef shoes for cay access</li>
+  <li>Comfortable sandals or reef shoes</li>
 </ul>
-<br>
   <div class="text-center mt-4">
       <button class="show-wait btn btn-outline-light">View Future Itinerary</button>
   </div>
@@ -104,25 +102,24 @@ Enjoy a guided dusk snorkel in warm, shallow waters. Seasonal bioluminescence vi
   </div>
 
   <div id="itinerary-wait" class="itinerary-toggle d-none">
-    <h3 class="dest-sub">The Archive Reef Collection Itinerary</h3>
-  <div class="text-center mt-4">
-      <button class="show-now btn btn-outline-light">Back to Current Itinerary</button>
+    <div class="text-center mt-4">
+    <h5 class="dest-sub text-center">The Archive Reef Collection Itinerary</h3>
   </div>
     <div id="countdown-future" class="countdown-timer mt-3"></div>
-<br>
-<h6 class="itin-tod">Morning</h6>
+    <br>
+<h6 class="itin-tod-neg">Morning</h6>
 <p><strong>Aerial Flyover of the Reef Remnants</strong><br>
 Begin your journey with a scenic flight over the Reef Preservation Zone. Once-vibrant coral systems are now visible as faded skeletal outlines beneath the surface. An onboard naturalist narrates ecological shifts while biodiversity overlays appear through windowpane tinting.</p>
 
-<h6 class="itin-tod">Midday</h6>
+<h6 class="itin-tod-neg">Midday</h6>
 <p><strong>Simulated Snorkel: Coral Memory Tank</strong><br>
 Step into a temperature-controlled immersion chamber replicating historic reef conditions. Navigate AI-rendered coral formations while narrators highlight extinct species and former reef functions. A personalized biofeedback souvenir is available upon exit.</p>
 
-<h6 class="itin-tod">Afternoon</h6>
+<h6 class="itin-tod-neg">Afternoon</h6>
 <p><strong>Tasting Menu & Turtle Archive Encounter</strong><br>
 Dine at the Archive Cay Pavilion with a curated kelp-based tasting menu inspired by lost reef ecosystems. Then, visit a preserved sea turtle habitat where nesting behaviors are mimicked by ambient light sculptures with subtle kinetic movements.</p>
 
-<h6 class="itin-tod">Evening</h6>
+<h6 class="itin-tod-neg">Evening</h6>
 <p><strong>Twilight Paddle Along the Former Reef Line</strong><br>
 Glide through the mangrove-lined coastline once connected to the reef system. This guided night paddle features gentle lighting, motion-responsive glow paddles, and commentary on shifting marine boundaries. End with a locally distilled botanical nightcap beneath the stars.</p>
 
@@ -135,7 +132,6 @@ Glide through the mangrove-lined coastline once connected to the reef system. Th
   <li>Closed-toe water shoes for shoreline access and paddleboard stability</li>
 </ul>
 <p class="small fst-italic text-muted">All guests receive a commemorative coral remnant upon departure.</p>
-  <br>
   <div class="text-center mt-4">
       <button class="show-now btn btn-outline-light">Back to Current Itinerary</button>
   </div>
@@ -144,7 +140,7 @@ Glide through the mangrove-lined coastline once connected to the reef system. Th
 </section>
 
 
-<section class="container my-5 narrow-section">
+<section id="itinerary-section" class="container my-5 narrow-section">
   <h4 class="neg">Estimated Shift Timeline</h4>
   <p>The Great Barrier Reef is undergoing rapid ecological change, primarily due to rising ocean temperatures, sea-level rise, and ocean acidification — all consequences of anthropogenic climate change.</p>
 
@@ -208,11 +204,11 @@ Glide through the mangrove-lined coastline once connected to the reef system. Th
       const formatted = formatCountdownText(distance);
 
       if (countdownNow) {
-        countdownNow.innerHTML = `<em>Limited access ends in ${formatted}</em>`;
+        countdownNow.innerHTML = `<em>Limited access ends in ${formatted} - BOOK NOW!</em>`;
       }
 
       if (countdownFuture) {
-        countdownFuture.innerHTML = `<em>Exclusive access launches in ${formatted}</em>`;
+        countdownFuture.innerHTML = `<em>Exclusive access launches in ${formatted} - Reserve a spot TODAY!</em>`;
       }
     }
 
@@ -227,6 +223,7 @@ Glide through the mangrove-lined coastline once connected to the reef system. Th
       btn.addEventListener("click", () => {
         nowSection.classList.add("d-none");
         waitSection.classList.remove("d-none");
+        document.getElementById("itinerary-section").scrollIntoView({ behavior: "smooth" });
       });
     });
 
@@ -234,6 +231,7 @@ Glide through the mangrove-lined coastline once connected to the reef system. Th
       btn.addEventListener("click", () => {
         waitSection.classList.add("d-none");
         nowSection.classList.remove("d-none");
+        document.getElementById("itinerary-section").scrollIntoView({ behavior: "smooth" });
       });
     });
   });
