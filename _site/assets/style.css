@@ -362,9 +362,10 @@ h6.itin-tod-neg {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .custom-carousel {
-    height: 40vh;
+    height: 30vh;
+    width: 100%;
   }
 
   .custom-carousel .carousel-item img {
