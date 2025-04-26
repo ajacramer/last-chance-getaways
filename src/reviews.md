@@ -3,6 +3,128 @@ layout: base.njk
 title: Reviews
 ---
 
-# Reviews
+<h2 class="page-title">What Our Travelers Are Saying</h2>
 
-*Coming soon: Reviews*
+<div class="review-container">
+
+<div class="review-card">
+<h3>Flooded Fast!</h3>
+<p><strong>⭐⭐⭐⭐⭐</strong><br>"The water was a little higher than advertised, but hey, free snorkeling with every meal! Five stars for the surprise cardio workout trying to escape the tide!"</p>
+<p><em>- Trevor B.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Frozen Finances</h3>
+<p><strong>⭐⭐⭐</strong><br>"Booked the 'Frozen Fantasies' package to Glacier National Park. By the time we arrived, the only thing frozen was my credit card balance. Gorgeous puddles though."</p>
+<p><em>- Mia T.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Authentic Bulldozer Tour</h3>
+<p><strong>⭐⭐</strong><br>"Last Chance Getaways promised 'exclusive views of the vanishing Amazon rainforest.' They delivered: we got to see two trees and a bulldozer. Authentic!"</p>
+<p><em>- Damien L.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Flash Flood Fun</h3>
+<p><strong>⭐⭐⭐⭐</strong><br>"I’ve never felt more alive than running from a flash flood in Venice! Five stars for adrenaline. Minus one star because my Gucci loafers didn’t survive."</p>
+<p><em>- Cassidy R.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Penguin Hide and Seek</h3>
+<p><strong>⭐⭐⭐</strong><br>"We loved the Antarctic Peninsula package! The penguins were charming, if you could spot them through the thick wall of microplastics. Thanks for the memories (and the rash)!"</p>
+<p><em>- Jordan M.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Guilt in Gold</h3>
+<p><strong>⭐⭐⭐⭐⭐</strong><br>"A luxurious escape to a dying world. Every sunset over the bleached coral whispered 'this is your fault' in the most elegant way imaginable."</p>
+<p><em>- Sierra K.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Grieving the Reef</h3>
+<p><strong>⭐⭐</strong><br>"Honestly disappointed. I booked the ‘Great Barrier Brief’ expecting colorful reefs. Instead, it was more of a Great Barrier Grief. Should’ve read the fine print."</p>
+<p><em>- Matt V.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Existential Aperol</h3>
+<p><strong>⭐⭐⭐⭐</strong><br>"Absolutely stunning landscapes, if you enjoy existential dread with your aperol spritz. Bonus points for the 'Postcards from a Dead Future' souvenir package."</p>
+<p><em>- Priya S.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Immersive Panic</h3>
+<p><strong>⭐⭐⭐⭐</strong><br>"Our 'Last Chance Adventure' felt very real: the hotel was underwater by day three. Bold move by the company to call it 'immersive luxury.' Would panic again!"</p>
+<p><em>- Elena D.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Bugs, Burns, and Regret</h3>
+<p><strong>⭐⭐⭐⭐⭐</strong><br>"Signed up for the Amazon Basin tour and got complimentary mosquito bites, heatstroke, and mild deforestation guilt. 10/10, would recommend for masochists."</p>
+<p><em>- Chris J.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Venetian Dolphin Encounter</h3>
+<p><strong>⭐⭐⭐⭐</strong><br>"Booked the 'Venice Atlantis Experience.' Was not informed it would include sharing my gondola with a dolphin. Five stars for the aquatic ambiance. Zero stars for personal space."</p>
+<p><em>- Olivia S.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Ghost Coral Whispers</h3>
+<p><strong>⭐⭐⭐⭐⭐</strong><br>"Great Barrier Reef package promised 'vibrant marine life.' Mostly saw the ghost of a coral whisper 'leave.' Tour guide said it was part of the package. Unforgettable."</p>
+<p><em>- Zane W.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Champagne and Crying</h3>
+<p><strong>⭐⭐⭐⭐</strong><br>"Nothing says luxury like sipping champagne while watching the last glacier weep into the sea. Would have cried too, but hydration costs extra."</p>
+<p><em>- Harper D.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Influencers in the Wildfire</h3>
+<p><strong>⭐⭐⭐</strong><br>"We did the Amazon Basin 'Into the Ashes' tour. Saw six fires, two bulldozers, and one influencer doing a TikTok dance in front of a dying tree. The true circle of life."</p>
+<p><em>- Kellan J.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Plastic Gyre Adventure</h3>
+<p><strong>⭐⭐⭐⭐⭐</strong><br>"The 'Antarctic Twilight' package was breathtaking. Especially when our eco-cruise ship got stuck in a plastic gyre and we had to eat the captain's hat for survival. Five stars for drama!"</p>
+<p><em>- Lacey P.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Apocalypse Pool Parties</h3>
+<p><strong>⭐⭐⭐⭐</strong><br>"Loved our 'Climate Collapse Luxe' itinerary: snorkeling above submerged city ruins by day, attending themed apocalypse cocktail parties by night. Honestly felt like I was the problem."</p>
+<p><em>- Marcus F.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Honeymoon Hydration Crisis</h3>
+<p><strong>⭐⭐⭐⭐⭐</strong><br>"Perfect honeymoon! Nothing bonds two people like arguing over who forgot the emergency desalination tablets when the taps ran dry mid-vacation. Memories are priceless."</p>
+<p><em>- Jamie & Taylor</em></p>
+</div>
+
+<div class="review-card">
+<h3>Meltdown Safari</h3>
+<p><strong>⭐⭐⭐⭐</strong><br>"The personalized 'End of Days Safari' in Glacier National Park exceeded expectations. Saw two melting icebergs, one deranged elk, and at least three existential crises. Bravo."</p>
+<p><em>- Devon S.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Banana Boat Mayhem</h3>
+<p><strong>⭐⭐⭐⭐⭐</strong><br>"They promised a 'front-row seat to history' at Venice. They did not mention the 'row' would be on an inflatable banana boat being chased by jellyfish. A+ for spontaneity!"</p>
+<p><em>- Rachel V.</em></p>
+</div>
+
+<div class="review-card">
+<h3>Carbon Offsets and Lies</h3>
+<p><strong>⭐⭐⭐⭐⭐</strong><br>"Signed up for the Last Chance Getaways Loyalty Program. Earn one free night for every carbon offset lie you tell yourself. I’m Platinum now."</p>
+<p><em>- Owen M.</em></p>
+</div>
+
+</div>

@@ -399,7 +399,7 @@ h6.itin-tod-neg {
   margin-top: 2rem;
   max-width: 750px;
   padding: 1rem 2rem;
-  background-color: #e8e4dceb;
+  background-color: #e8e5dcde;
   color: var(--color-navy);
   border-radius: 1rem;
 }
@@ -479,7 +479,6 @@ h6.itin-tod-neg {
 
 /* Each question */
 #quiz-questions h5 {
-  font-family: var(--font-subheader, 'amandine', sans-serif);
   font-size: 1.25rem;
   color: var(--color-gold);
   margin-bottom: 0.5rem;
@@ -556,3 +555,58 @@ h6.itin-tod-neg {
   justify-content: center;
 }
 
+/* Reviews styling */
+.review-container {
+  max-width: 750px;
+  width: 100%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.review-card {
+  width: 100%; 
+  background-color: rgba(41, 173, 193, 0.25);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.02);
+}
+
+.review-card p {
+  color: var(--color-sand);
+  font-size: 1.2rem;
+  font-family: lato, sans-serif;
+}
+
+.review-card h3 {
+  color: var(--color-gold);
+}
+
+.page-title {
+  text-align: center;
+  color: var(--color-teal);
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+}
+
+/* Footer */
+.site-footer {
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.site-footer p {
+  color: var(--color-cream);
+  font-style: italic;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
