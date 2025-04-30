@@ -131,7 +131,7 @@ button:hover,
 
 /* Destination Carousel Cropping */
 .custom-carousel {
-  height: 60vh; 
+  height: 60%; 
   width: 60%;
   margin: auto;
   background-color: var(--color-navy); 
