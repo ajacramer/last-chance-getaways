@@ -16,27 +16,27 @@ book_now_html: |
   <h5 class="dest-pos">Early Access Venice Itinerary</h5>
     <div id="countdown-now" class="countdown-timer mt-3"></div>
     <br>
-  <h6 class="itin-tod">Morning</h6>
+  <h5 class="itin-tod">Morning</h5>
   <p><strong>Private Walking Tour of St. Mark’s Square</strong><br>
   Begin your day with a guided stroll through Venice’s most iconic piazza. Learn the nuanced history of the Basilica, Doge’s Palace, and the subtle rise of tides that have been threatening the square’s edges.</p>
 
-  <h6 class="itin-tod">Midday</h6>
+  <h5 class="itin-tod">Midday</h5>
   <p><strong>Chef-Curated Picnic on the Grand Canal</strong><br>
   Enjoy a seasonal tasting menu served on a private floating platform. Local chefs prepare curated Venetian seafood and cicchetti while you drift past gondolas and market boats.</p>
 
-  <h6 class="itin-tod">Afternoon</h6>
+  <h5 class="itin-tod">Afternoon</h5>
   <p><strong>Teatro La Fenice</strong><br>
   Attend a matinee opera or chamber music performance in Venice’s historic opera house. Guides provide environmental commentary about past floods and restoration efforts.</p>
 
-  <h6 class="itin-tod">Evening</h6>
+  <h5 class="itin-tod">Evening</h5>
   <p><strong>Twilight Gondola Ride</strong><br>
   Glide through fading sunlight as a professional gondolier offers insight on ancient flood management and the Aqua Alta phenomena. Finish the ride with prosecco under the Bridge of Sighs.</p>
 
-  <h6 class="itin-tod">Night</h6>
+  <h5 class="itin-tod">Night</h5>
   <p><strong>Rooftop Dining Experience</strong><br>
   Dine above the city lights with views of lapping canal waters and slowly encroaching seawalls. Menus include historical Venetian dishes and eco-conscious pairings.</p>
     <br>
-  <h6>Packing Considerations</h6>
+  <h5>Packing Considerations</h5>
   <ul>
     <li>Lightweight linen or breathable cotton daywear</li>
     <li>Comfortable walking shoes for cobblestone and canal bridges</li>
@@ -54,27 +54,27 @@ wait_later_html: |
       <div id="countdown-future" class="countdown-timer mt-3"></div>
       <br>
 
-  <h6 class="itin-tod-neg">Morning</h6>
+  <h5 class="itin-tod-neg">Morning</h5>
   <p><strong>Submersible Arrival Tour of St. Mark’s Square</strong><br>
   Arrive via autonomous capsule equipped with panoramic lenses as you descend through what remains of St. Mark’s submerged structures.</p>
 
-  <h6 class="itin-tod-neg">Midday</h6>
+  <h5 class="itin-tod-neg">Midday</h5>
   <p><strong>Floating Tasting Menu: Above the Grand Canal</strong><br>
   Taste the essence of a drowned city as chefs reconstruct traditional Venetian cuisine aboard a stabilized hover raft with seating pods arranged around aerial photos of the lost streets.</p>
 
-  <h6 class="itin-tod-neg">Afternoon</h6>
+  <h5 class="itin-tod-neg">Afternoon</h5>
   <p><strong>AI-Rendered Opera Experience</strong><br>
   Listen to an AI-enhanced reconstruction of La Fenice’s final recorded performance. Audio-responsive visuals shimmer through your headset as fragments of history are projected against reclaimed stone.</p>
 
-  <h6 class="itin-tod-neg">Evening</h6>
+  <h5 class="itin-tod-neg">Evening</h5>
   <p><strong>Scuba Dive: Grand Canal Descent</strong><br>
   Dive between pillars of flooded facades with waterproof headsets narrating what once stood at surface level. Swim-throughs include partially intact cafes and bell towers.</p>
 
-  <h6 class="itin-tod-neg">Night</h6>
+  <h5 class="itin-tod-neg">Night</h5>
   <p><strong>Elevated Dining: SkyDeck Capsule</strong><br>
   Ascend via aerial tram to a suspended capsule high above the lagoon for your final meal of the day, accompanied by atmospheric data visualization projections of the water below.</p>
     <br>
-  <h6>Packing Considerations</h6>
+  <h5>Packing Considerations</h5>
   <ul>
     <li>Moisture-wicking base layers or compression undergear</li>
     <li>Amphibious traction boots for submerged passageways</li>

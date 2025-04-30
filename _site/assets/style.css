@@ -74,9 +74,6 @@ h3, h4 {
 
 
   /* Nav Bar Styling */
-.navbar {
-  background-color: var(--color-navy);
-}
 
 /* Links - default state */
 .navbar-nav .nav-link {
@@ -319,14 +316,22 @@ p.neg {
   color: var(--color-gold);
 }
 
-h6.itin-tod {
+h5.itin-tod {
   color: var(--color-teal);
   font-style: italic;
 }
 
-h6.itin-tod-neg {
+h5.itin-tod-neg {
   color: var(--color-red);
   font-style: italic;
+}
+
+.itin-tod + p {
+  padding-bottom: 1rem; 
+}
+
+.itin-tod-neg + p {
+  padding-bottom: 1rem; 
 }
 
 .destination-itinerary-section {
@@ -391,6 +396,10 @@ h6.itin-tod-neg {
 @media (max-width: 450px) {
   .destination-itinerary-section {
     margin-top: -10rem;
+  }
+
+  .navbar-brand img {
+    height: 1.3rem;
   }
 
 }
