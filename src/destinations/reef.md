@@ -18,24 +18,24 @@ book_now_html: |
     </div>
   <div id="countdown-now" class="countdown-timer mt-3"></div>
   <br>
-  <h6 class="itin-tod">Morning</h6>
+  <h5 class="itin-tod">Morning</h5>
   <p><strong>Helicopter Arrival Over Living Reef</strong><br>
   Begin your journey with a private aerial descent above the reef’s most vibrant sections. Heart Reef flyover and in-flight champagne included.</p>
 
-  <h6 class="itin-tod">Midday</h6>
+  <h5 class="itin-tod">Midday</h5>
   <p><strong>Guided Snorkel with Marine Biologist</strong><br>
   Join a reef conservation expert for a snorkeling tour of one of the few actively regenerating coral zones. Includes a personalized coral ID guide and underwater photo package.</p>
 
-  <h6 class="itin-tod">Afternoon</h6>
+  <h5 class="itin-tod">Afternoon</h5>
   <p><strong>Chef-Served Cay Picnic & Turtle Nesting Visit</strong><br>
   Dine on a remote sand cay with seasonal, locally sourced fare. Afterwards, observe an active sea turtle nesting site with a local Indigenous guide (Nov–Mar).</p>
 
-  <h6 class="itin-tod">Evening</h6>
+  <h5 class="itin-tod">Evening</h5>
   <p><strong>Twilight Reef Drift or Bioluminescence Swim</strong><br>
   Enjoy a guided dusk snorkel in warm, shallow waters. Seasonal bioluminescence visible in select locations; subject to tide and algae conditions.</p>
 
   <br>
-  <h6>Packing Considerations</h6>
+  <h5>Packing Considerations</h5>
   <ul>
     <li>Reef-safe swimwear and biodegradable sunscreen</li>
     <li>Lightweight resort attire for beach and aerial travel</li>
@@ -52,24 +52,24 @@ wait_later_html: |
     </div>
       <div id="countdown-future" class="countdown-timer mt-3"></div>
       <br>
-  <h6 class="itin-tod-neg">Morning</h6>
+  <h5 class="itin-tod-neg">Morning</h5>
   <p><strong>Aerial Flyover of the Reef Remnants</strong><br>
   Begin your journey with a scenic flight over the Reef Preservation Zone. Once-vibrant coral systems are now visible as faded skeletal outlines beneath the surface. An onboard naturalist narrates ecological shifts while biodiversity overlays appear through windowpane tinting.</p>
 
-  <h6 class="itin-tod-neg">Midday</h6>
+  <h5 class="itin-tod-neg">Midday</h5>
   <p><strong>Simulated Snorkel: Coral Memory Tank</strong><br>
   Step into a temperature-controlled immersion chamber replicating historic reef conditions. Navigate AI-rendered coral formations while narrators highlight extinct species and former reef functions. A personalized biofeedback souvenir is available upon exit.</p>
 
-  <h6 class="itin-tod-neg">Afternoon</h6>
+  <h5 class="itin-tod-neg">Afternoon</h5>
   <p><strong>Tasting Menu & Turtle Archive Encounter</strong><br>
   Dine at the Archive Cay Pavilion with a curated kelp-based tasting menu inspired by lost reef ecosystems. Then, visit a preserved sea turtle habitat where nesting behaviors are mimicked by ambient light sculptures with subtle kinetic movements.</p>
 
-  <h6 class="itin-tod-neg">Evening</h6>
+  <h5 class="itin-tod-neg">Evening</h5>
   <p><strong>Twilight Paddle Along the Former Reef Line</strong><br>
   Glide through the mangrove-lined coastline once connected to the reef system. This guided night paddle features gentle lighting, motion-responsive glow paddles, and commentary on shifting marine boundaries. End with a locally distilled botanical nightcap beneath the stars.</p>
 
   <br>
-  <h6>Packing Considerations</h6>
+  <h5>Packing Considerations</h5>
   <ul>
     <li>UV-protective swimwear with thermal lining</li>
     <li>Lightweight climate-adaptive clothing for preserved and humid zones</li>

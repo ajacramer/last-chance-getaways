@@ -18,16 +18,16 @@ book_now_html: |
   </div>
   <div id="countdown-now" class="countdown-timer mt-3"></div>
   <br>
-  <h6 class="itin-tod">Morning</h6>
+  <h5 class="itin-tod">Morning</h5>
   <p><strong>Zodiac Landing on Pristine Ice Shores</strong><br>Step onto remote glaciers and rocky beaches teeming with penguins, guided by polar ecologists.</p>
-  <h6 class="itin-tod">Midday</h6>
+  <h5 class="itin-tod">Midday</h5>
   <p><strong>Sea Kayaking Along Iceberg Alley</strong><br>Paddle between sculpted icebergs and watch for humpbacks and orcas under the midnight sun.</p>
-  <h6 class="itin-tod">Afternoon</h6>
+  <h5 class="itin-tod">Afternoon</h5>
   <p><strong>Historic Research Station Tour</strong><br>Visit active scientific outposts and learn about ongoing climate monitoring efforts firsthand.</p>
-  <h6 class="itin-tod">Evening</h6>
+  <h5 class="itin-tod">Evening</h5>
   <p><strong>Sunset Toast at the Edge of the World</strong><br>Celebrate the endless twilight with champagne atop an ice shelf. Certified cold-weather apparel provided.</p>
   <br>
-  <h6>Packing Considerations</h6>
+  <h5>Packing Considerations</h5>
   <ul>
   <li>Insulated, waterproof expedition clothing</li>
   <li>Polar-grade boots with crampons</li>
@@ -44,16 +44,16 @@ wait_later_html: |
   </div>
   <div id="countdown-future" class="countdown-timer mt-3"></div>
   <br>
-  <h6 class="itin-tod-neg">Morning</h6>
+  <h5 class="itin-tod-neg">Morning</h5>
   <p><strong>Hovercraft Glide Over Exposed Bedrock</strong><br>Skim across ice-free terrains revealed by rapid glacial retreat. Narrated geological insights en route.</p>
-  <h6 class="itin-tod-neg">Midday</h6>
+  <h5 class="itin-tod-neg">Midday</h5>
   <p><strong>Ice Archive Exhibit Visit</strong><br>Tour a cryogenic facility preserving ancient ice cores, atmospheric samples, and lost microfauna.</p>
-  <h6 class="itin-tod-neg">Afternoon</h6>
+  <h5 class="itin-tod-neg">Afternoon</h5>
   <p><strong>Submerged Ice Shelf Dive</strong><br>Witness the underwater remnants of collapsed ice shelves. Includes memory-capture helmet rental.</p>
-  <h6 class="itin-tod-neg">Evening</h6>
+  <h5 class="itin-tod-neg">Evening</h5>
   <p><strong>Polar Twilight Immersion Theatre</strong><br>Experience a 360° simulation of the vanished peninsula landscape, recreated using archival drone footage.</p>
   <br>
-  <h6>Packing Considerations</h6>
+  <h5>Packing Considerations</h5>
   <ul>
   <li>Insulating suits adapted for hovercraft and immersion zones</li>
   <li>UV-protective snow goggles</li>

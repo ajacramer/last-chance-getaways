@@ -18,16 +18,16 @@ book_now_html: |
   </div>
   <div id="countdown-now" class="countdown-timer mt-3"></div>
   <br>
-  <h6 class="itin-tod">Morning</h6>
+  <h5 class="itin-tod">Morning</h5>
   <p><strong>Glacial Valley Hike with Naturalist</strong><br>Join a guided hike through valleys carved by ancient ice. Witness active glacier fields, wildflower blooms, and historic chalets.</p>
-  <h6 class="itin-tod">Midday</h6>
+  <h5 class="itin-tod">Midday</h5>
   <p><strong>Private Glacier Lake Picnic</strong><br>Savor a chef-prepared lakeside meal featuring Montana-sourced fare. Canoe excursions available post-lunch for up-close glacier viewing.</p>
-  <h6 class="itin-tod">Afternoon</h6>
+  <h5 class="itin-tod">Afternoon</h5>
   <p><strong>Scenic Drive: Going-to-the-Sun Road</strong><br>Experience one of America's most iconic mountain drives, featuring panoramic overlooks and ranger-led talks on geological history.</p>
-  <h6 class="itin-tod">Evening</h6>
+  <h5 class="itin-tod">Evening</h5>
   <p><strong>Stargazing at Logan Pass</strong><br>Wrap the day beneath pristine dark skies, where telescopes and astrophotographers highlight constellations above the glacial peaks.</p>
   <br>
-  <h6>Packing Considerations</h6>
+  <h5>Packing Considerations</h5>
   <ul>
   <li>Breathable hiking layers and rain-resistant outerwear</li>
   <li>Sturdy trail shoes or hiking boots</li>
@@ -44,16 +44,16 @@ wait_later_html: |
   </div>
   <div id="countdown-future" class="countdown-timer mt-3"></div>
   <br>
-  <h6 class="itin-tod-neg">Morning</h6>
+  <h5 class="itin-tod-neg">Morning</h5>
   <p><strong>Drone Tour of Glacier Footprints</strong><br>Begin with a virtual flyover of former glacier basins. Thermal overlays and time-lapse animations illustrate glacial retreat.</p>
-  <h6 class="itin-tod-neg">Midday</h6>
+  <h5 class="itin-tod-neg">Midday</h5>
   <p><strong>AI-Reconstructed Alpine Meadow Experience</strong><br>Stroll digitally reconstructed meadows in climate-controlled domes. Sensors simulate former winds, flora scents, and temperature variations.</p>
-  <h6 class="itin-tod-neg">Afternoon</h6>
+  <h5 class="itin-tod-neg">Afternoon</h5>
   <p><strong>Historic Chalet Immersion Chamber</strong><br>Tour preserved remnants of early 20th-century chalets via augmented reality overlays. Artifacts displayed alongside projected ice loss timelines.</p>
-  <h6 class="itin-tod-neg">Evening</h6>
+  <h5 class="itin-tod-neg">Evening</h5>
   <p><strong>Dark Sky Virtual Nightscape</strong><br>Experience a holographic recreation of historic night skies, complete with simulated glacial backdrops and vanishing wildlife sounds.</p>
   <br>
-  <h6>Packing Considerations</h6>
+  <h5>Packing Considerations</h5>
   <ul>
   <li>Lightweight climate-adaptive clothing</li>
   <li>VR-ready eyewear and gloves (available for rent)</li>

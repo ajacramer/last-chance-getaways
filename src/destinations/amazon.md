@@ -18,16 +18,16 @@ book_now_html: |
   </div>
   <div id="countdown-now" class="countdown-timer mt-3"></div>
   <br>
-  <h6 class="itin-tod">Morning</h6>
+  <h5 class="itin-tod">Morning</h5>
   <p><strong>Canoe Excursion Through Primary Rainforest</strong><br>Navigate winding tributaries flanked by towering ceibas and vibrant wildlife. Guided by local conservationists.</p>
-  <h6 class="itin-tod">Midday</h6>
+  <h5 class="itin-tod">Midday</h5>
   <p><strong>Jungle Canopy Dining Experience</strong><br>Ascend to a suspended platform for a rainforest tasting menu using indigenous ingredients. Birdwatching binoculars provided.</p>
-  <h6 class="itin-tod">Afternoon</h6>
+  <h5 class="itin-tod">Afternoon</h5>
   <p><strong>Medicinal Plant Walk</strong><br>Explore traditional knowledge of rainforest flora with a local healer. Includes hands-on preparation of herbal remedies.</p>
-  <h6 class="itin-tod">Evening</h6>
+  <h5 class="itin-tod">Evening</h5>
   <p><strong>Sunset River Cruise</strong><br>Glide through mirrored waters as pink river dolphins surface. Includes live Amazonian folk music and storytelling session.</p>
   <br>
-  <h6>Packing Considerations</h6>
+  <h5>Packing Considerations</h5>
   <ul>
   <li>Lightweight moisture-wicking clothing</li>
   <li>Mosquito-repellent outerwear</li>
@@ -44,16 +44,16 @@ wait_later_html: |
   </div>
   <div id="countdown-future" class="countdown-timer mt-3"></div>
   <br>
-  <h6 class="itin-tod-neg">Morning</h6>
-  <p><strong>Biodiversity Virtual Museum Tour</strong><br>Walk through an immersive AI recreation of vanished rainforest habitats. Features 360° soundscapes of extinct species.</p>
-  <h6 class="itin-tod-neg">Midday</h6>
+  <h5 class="itin-tod-neg">Morning</h5>
+  <p><strong>Biodiversity Virtual Museum Tour</strong><br>Walk through an immersive AI recreation of vanished rainforest habitats. Features h50° soundscapes of extinct species.</p>
+  <h5 class="itin-tod-neg">Midday</h5>
   <p><strong>Vertical Farm Picnic</strong><br>Dine within an urban vertical farm replicating Amazonian crops. Menus curated with synthetic rainforest flavors.</p>
-  <h6 class="itin-tod-neg">Afternoon</h6>
+  <h5 class="itin-tod-neg">Afternoon</h5>
   <p><strong>Cultural Heritage VR Encounters</strong><br>Interact with recorded knowledge from Amazonian tribes using augmented storytelling devices in a controlled setting.</p>
-  <h6 class="itin-tod-neg">Evening</h6>
+  <h5 class="itin-tod-neg">Evening</h5>
   <p><strong>Deforestation Memory Projection</strong><br>Attend an open-air light installation tracing lost river paths and extinct animal migrations. End with an eco-futurism panel discussion.</p>
   <br>
-  <h6>Packing Considerations</h6>
+  <h5>Packing Considerations</h5>
   <ul>
   <li>Breathable climate-adaptive clothing</li>
   <li>Anti-microbial footwear for humid installations</li>
